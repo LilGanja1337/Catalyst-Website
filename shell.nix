@@ -4,7 +4,4 @@ with pkgs; mkShell {
   nativeBuildInputs = [
     html-tidy
   ];
-  buildInputs = [
-    darkhttpd
-  ];
 }
