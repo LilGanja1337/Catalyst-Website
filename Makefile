@@ -3,7 +3,7 @@ default: tidy
 
 .PHONY: tidy
 tidy:
-	find "src" \
+	find "www" \
 	    -type "f" \
 	    -iname "*.html" \
 	    -exec tidy -config "tidy.conf" {} \;
