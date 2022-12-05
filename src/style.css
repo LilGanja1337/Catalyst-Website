@@ -1,5 +1,5 @@
 body {
-    font-family: Roboto, sans-serif
+    font-family: sans-serif;
 }
 
 body, html {
@@ -8,6 +8,81 @@ body, html {
     height: 100%;
     width: 100%;
     background: #3e3e3e
+}
+
+.waves {
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    margin-bottom: -7px;
+    min-height: 100px;
+    max-height: 150px;
+    background: 0 0
+}
+
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite
+}
+
+.parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s
+}
+
+.parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s
+}
+
+.parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s
+}
+
+.parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s
+}
+
+.topnav {
+    position: absolute;
+    overflow: hidden;
+    background-color: #3e3e3e;
+    left: 50%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    white-space: nowrap;
+    transform: translate(-50%, -50%)
+}
+
+.topnav a {
+    float: none;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 5px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: .3s;
+    border: 3px solid transparent
+}
+
+.topnav a:hover {
+    border: 3px solid #38ba94;
+    border-radius: 5px
+}
+
+.topnav-right {
+    float: right
+}
+
+@media screen and (max-width: 800px) {
+    .topnav a, .topnav-right {
+        float: none;
+        display: block;
+        padding: 5px 12px;
+        position: relative;
+        overflow: visible
+    }
 }
 
 .fadein {
@@ -388,5 +463,35 @@ footer p.copyright span.lower {
 
     .container {
         width: 90%
+    }
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0)
+    }
+    100% {
+        transform: translate3d(85px, 0, 0)
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .waves {
+        background: 0 0;
+        height: 80px;
+        min-height: 40px;
+        margin-bottom: -129px
+    }
+}
+
+@media screen and (max-height: 700px) {
+    .waves {
+        position: relative;
+        width: 100%;
+        height: 20vh;
+        margin-bottom: -129px;
+        min-height: 100px;
+        max-height: 150px;
+        background: 0 0
     }
 }
