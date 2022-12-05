@@ -1,10 +1,9 @@
 .PHONY: default
-default: tidy
+default: format
 
-.PHONY: tidy
-tidy:
-	find "www" \
+.PHONY: format
+format:
+	find "src" \
 	    -type "f" \
 	    -iname "*.html" \
 	    -exec tidy -config "tidy.conf" {} \;
-	minify --css-precision 2 --js-keep-var-names

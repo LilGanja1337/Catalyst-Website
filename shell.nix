@@ -3,6 +3,5 @@ in { pkgs ? import (fetchTarball url) { } }:
 with pkgs; mkShell {
   nativeBuildInputs = [
     html-tidy
-    minify
   ];
 }
