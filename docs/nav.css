@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 .topnav {
@@ -11,8 +11,7 @@ body {
     padding-top: 8px;
     padding-bottom: 8px;
     white-space: nowrap;
-    transform: translate(-50%, -50%);
-
+    transform: translate(-50%, -50%)
 }
 
 .topnav a {
@@ -22,68 +21,25 @@ body {
     padding: 5px 16px;
     text-decoration: none;
     font-size: 17px;
-    transition: 0.3s;
-    border:3px solid rgba(0, 0, 0, 0);
+    transition: .3s;
+    border: 3px solid transparent
 }
 
 .topnav a:hover {
-    /*background-color: #101010;*/
-    border:3px solid #38ba94;
-    border-radius: 5px;
-}
-
-.topnav a.active {
-    background-color: #38ba94;
-    color: white;
-}
-
-.topnav-centered a {
-    float: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    border: 3px solid #38ba94;
+    border-radius: 5px
 }
 
 .topnav-right {
-    float: right;
+    float: right
 }
 
-/* Responsive navigation menu (for mobile devices) */
 @media screen and (max-width: 800px) {
     .topnav a, .topnav-right {
         float: none;
         display: block;
         padding: 5px 12px;
         position: relative;
-        overflow: visible;
-    }
-
-    .topnav-centered a {
-        position: relative;
-        top: 0;
-        left: 0;
-        transform: none;
+        overflow: visible
     }
 }
-/*
-     FILE ARCHIVED ON 00:32:54 Sep 11, 2022 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 22:07:25 Dec 04, 2022.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
-*/
-/*
-playback timings (ms):
-  captures_list: 3882.721
-  exclusion.robots: 0.084
-  exclusion.robots.policy: 0.076
-  cdx.remote: 0.072
-  esindex: 0.01
-  LoadShardBlock: 180.696 (3)
-  PetaboxLoader3.datanode: 213.644 (4)
-  CDXLines.iter: 19.739 (3)
-  load_resource: 225.27
-  PetaboxLoader3.resolve: 37.498
-*/
