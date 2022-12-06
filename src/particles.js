@@ -160,7 +160,7 @@
                     i.fn.vendors.drawShape(i.canvas.ctx, e.x - 2 * a / (i.particles.shape.polygon.nb_sides / 4), e.y - a / 1.52, 2 * a * 2.66 / (i.particles.shape.polygon.nb_sides / 3), i.particles.shape.polygon.nb_sides, 2);
                     break;
                 case"image":
-                    ;
+
                     if ("svg" == i.tmp.img_type) var n = e.img.obj; else n = i.tmp.img_obj;
                     n && i.canvas.ctx.drawImage(n, e.x - a, e.y - a, 2 * a, 2 * a / e.img.ratio)
             }

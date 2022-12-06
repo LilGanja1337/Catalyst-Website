@@ -61,36 +61,20 @@ main .results-wrap {
 }
 
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
-    display: flex;
     justify-content: center;
     align-items: center;
     background: #101010;
-    z-index: 20
-}
-
-footer p.copyright a {
-    color: #ccc;
-    text-decoration: underline solid #ccc;
-    transition: text-decoration .3s ease
-}
-
-footer p.copyright a:hover {
-    color: #ccc;
-    text-decoration: underline solid transparent
-}
-
-footer p.copyright span.lower {
-    margin-top: 5px;
-    display: block
+    z-index: 20;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
 }
 
 footer p.copyright {
     text-align: center;
-    color: #ccc;
+    color: white;
     font-size: 15px
 }
 
