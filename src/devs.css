@@ -1,0 +1,36 @@
+.devs-container {
+    display: flex;
+    text-align: center;
+    gap: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.dev-card {
+    border: 3px solid #38ba94;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, .47);
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.player-image {
+    width: 50%;
+}
+
+.dev-name {
+    color: white;
+    width: auto;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .devs-container {
+        flex-direction: column;
+    }
+
+    .dev-card {
+        max-width: 50%;
+    }
+}
