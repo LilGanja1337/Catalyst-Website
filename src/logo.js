@@ -23,4 +23,4 @@ function setTextAnimation(delay, duration, strokeWidth, strokeColor, strokeColor
     }
 }
 
-setTextAnimation(0.1, 3, 2, '#ffffff', '#00B3B3')
+setTextAnimation(0.1, 3, 2, '#ffffff', '#38BA94')
